@@ -1,0 +1,20 @@
+char ss{
+	const int b=5;
+	int i,j;
+	j=b;
+	while(j){
+		i=i+3;
+		j=j-1;
+	}
+	if(i>10){
+		return('a');
+	}
+	else{
+		return('b');
+	}
+}
+void (){
+	int a,r,x;
+	scanf(a, x);
+	printf(a+x+ss);
+}

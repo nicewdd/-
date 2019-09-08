@@ -1,0 +1,259 @@
+const int maxnum = 10
+const int minnum = -100
+const char word = 'a'
+var int flag
+var int num1
+var int num2
+var int array[10]
+var int n
+var char string[3]
+int sum()
+para int x
+para int y
+@t1 = x + y
+ret @t1
+int init()
+const int len = 10
+var int index
+@t2 = 0
+flag = @t2
+@t3 = 0
+num1 = @t3
+@t4 = 0
+num2 = @t4
+@t5 = 0
+n = @t5
+@t6 = 0
+index = @t6
+label1:
+index < 10
+BZ label2
+@t7 = 0
+array[index] = @t7
+@t8 = 1
+@t9 = index + @t8
+index = @t9
+GOTO label1
+label2:
+@t10 = 2
+index = @t10
+label3:
+@t12 = '0'
+string[index] = @t12
+@t13 = 1
+index = index - @t13
+@t11 = 0
+index >= @t11
+BZ label4
+GOTO label3
+label4:
+@t14 = 0
+ret @t14
+void print()
+para int result
+@t15 = 1
+flag == @t15
+BZ label5
+printf "compute the factorial of "
+printf n
+printf "the result is:"
+printf result
+ret 
+GOTO label6
+label5:
+label6:
+@t16 = 2
+flag == @t16
+BZ label7
+printf "the sum is:"
+printf result
+ret 
+GOTO label8
+label7:
+label8:
+ret 
+ret 
+int factorial()
+para int n
+@t17 = 1
+n == @t17
+BZ label9
+ret n
+GOTO label10
+label9:
+@t18 = 1
+@t19 = n - @t18
+push @t19
+call factorial
+@t20 = RET
+@t21 = n * @t20
+ret @t21
+label10:
+void printc()
+var int i
+printf 'a'
+@t22 = '+'
+printf @t22
+@t23 = '-'
+printf @t23
+@t24 = '*'
+printf @t24
+@t25 = '/'
+printf @t25
+@t26 = 0
+i = @t26
+label11:
+@t28 = string[i]
+printf @t28
+@t29 = 1
+i = i + @t29
+@t27 = 3
+i != @t27
+BZ label12
+GOTO label11
+label12:
+ret 
+char fun()
+para int a
+para int b
+var char n
+var int re
+@t30 = a + b
+@t31 = 0
+@t32 = array[@t31]
+@t33 = @t30 * @t32
+@t34 = 10
+@t35 = @t33 * @t34
+@t36 = 'A'
+@t37 = @t35 * @t36
+@t38 = 1
+push a
+push @t38
+call sum
+@t39 = RET
+@t40 = @t37 / @t39
+re = @t40
+@t41 =  - re
+@t42 = 'a'
+@t43 = @t41 + @t42
+re = @t43
+@t44 =  + re
+@t45 = 'a'
+@t46 = @t44 - @t45
+re = @t46
+@t47 = 'a'
+n = @t47
+ret n
+void main()
+var int result
+call init
+@t48 = RET
+scanf flag
+@t49 = 1
+flag == @t49
+BZ label13
+scanf n
+n > 10
+BZ label14
+printf "too big!"
+ret
+GOTO label15
+label14:
+label15:
+@t50 = 0
+n <= @t50
+BZ label16
+printf "must be a positive number!"
+ret
+GOTO label17
+label16:
+label17:
+push n
+call factorial
+@t51 = RET
+result = @t51
+GOTO label18
+label13:
+label18:
+@t52 = 2
+flag == @t52
+BZ label19
+scanf num1
+scanf num2
+num1 > 10
+BZ label20
+printf "too big!"
+ret
+GOTO label21
+label20:
+label21:
+num1 < -100
+BZ label22
+printf "too small!"
+ret
+GOTO label23
+label22:
+label23:
+num2 > 10
+BZ label24
+printf "too big!"
+ret
+GOTO label25
+label24:
+label25:
+num2 < -100
+BZ label26
+printf "too small!"
+ret
+GOTO label27
+label26:
+label27:
+push num1
+push num2
+call sum
+@t53 = RET
+result = @t53
+GOTO label28
+label19:
+label28:
+@t54 = 3
+flag == @t54
+BZ label29
+call printc
+ret
+GOTO label30
+label29:
+label30:
+@t55 = 3
+flag > @t55
+BZ label31
+printf "invalid flag!"
+ret
+GOTO label32
+label31:
+label32:
+@t56 = 0
+flag < @t56
+BZ label33
+printf "invalid flag!"
+ret
+GOTO label34
+label33:
+label34:
+push result
+call print
+@t57 = 0
+@t58 = 0
+push @t57
+push @t58
+call fun
+@t59 = RET
+printf @t59
+flag != 0
+BZ label35
+printf "flag is not equal to 0."
+GOTO label36
+label35:
+printf "flag is equal to 0."
+label36:
+ret

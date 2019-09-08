@@ -1,0 +1,57 @@
+const int num=5,result=1;
+const char s='f';
+int a,b,c,d[8],i,j,k;
+char t;
+int min(char s,char t){
+	return s-t;
+}
+int _negaten{
+	return -10;
+}
+void func{
+	printf("this is c^5");
+}
+void funa(int a,int b,int c){
+	if(a+b!=c){
+		printf("a+b!=c");
+	}
+	else{
+		printf("a+b==c");
+	}
+	if(a<=b){
+		printf("a<=b");
+	}
+	if(a>b){
+		printf("a>b");
+	}
+	if(a==b){
+		printf("a==b");
+	}
+	printf("this is a*b",a*b);
+	printf("this is b/a",b/a);
+}
+void main(){
+	scanf(a,b,c);
+	for(i=0;i<8;i=i+1){
+		scanf(j);
+		d[i]=j;
+	}
+	scanf(t);
+	k=d[6];
+	k=k/3;
+	t=t+k;
+	if(s>=t){
+		t=t+1;
+	}
+	if(s<t){
+		t=t-1;
+	}
+	while(num){
+		result=result*c;
+		num=num-1;
+	}
+	func;
+	printf(result);
+	printf(min(s,t)-_negaten+d[5]);
+	funa(a,b,c);
+} 

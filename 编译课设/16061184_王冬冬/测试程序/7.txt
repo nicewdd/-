@@ -1,0 +1,13 @@
+void main(){
+	int a,r,x;
+	scanf(a, x);
+	if (a > 0){
+		printf("a>0";
+		if (x <= 0) {
+			r = a / x * a;
+			printf("x<=0 ");
+		}
+	 	r = r + a;
+	}
+	printf(r);
+}

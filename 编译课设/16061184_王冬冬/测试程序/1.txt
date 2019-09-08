@@ -1,0 +1,12 @@
+int fact(int t)  {  
+	if(t < 3)  
+	return(t);  
+	else  
+	return(fact(t-1)*t);  
+}  
+void main(){  
+	int a,b;  
+	scanf(b);
+	a=fact(b);  
+	printf(a);
+}  

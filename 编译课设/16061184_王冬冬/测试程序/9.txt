@@ -1,0 +1,12 @@
+int x;
+void ss{
+	int i;
+	for(i=0;i<5;i=i+1){
+		x=x+i;
+	}
+	b=2;
+}
+void main(){
+	ss;
+	printf(x);
+}

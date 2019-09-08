@@ -1,0 +1,4 @@
+﻿  gramming.cpp
+c:\users\asus\desktop\16061184_王冬冬_测试程序二\语法分析\gramming.cpp(902): warning C4715: “look_value”: 不是所有的控件路径都返回值
+c:\users\asus\desktop\16061184_王冬冬_测试程序二\语法分析\gramming.cpp(664): warning C4715: “getword”: 不是所有的控件路径都返回值
+  语法分析.vcxproj -> C:\Users\ASUS\Desktop\16061184_王冬冬_测试程序二\Debug\语法分析.exe
